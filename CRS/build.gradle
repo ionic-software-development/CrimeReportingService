@@ -244,7 +244,8 @@ dependencies {
         exclude module: "mapstruct"
     }
     implementation "io.springfox:springfox-bean-validators"
-    implementation "com.microsoft.sqlserver:mssql-jdbc"
+    testCompile group: 'com.microsoft.sqlserver', name: 'mssql-jdbc', version: '8.1.0.jre8-preview'
+    // implementation "com.microsoft.sqlserver:mssql-jdbc"
     implementation "com.github.sabomichal:liquibase-mssql"
     liquibaseRuntime  "com.microsoft.sqlserver:mssql-jdbc"
     liquibaseRuntime "com.github.sabomichal:liquibase-mssql"
